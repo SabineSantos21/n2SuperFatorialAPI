@@ -10,12 +10,7 @@ namespace n2SuperFatorial.Controllers
     [Route("[controller]")]
     public class SuperFatorialController : ControllerBase
     {
-        private readonly ILogger<SuperFatorialController> _logger;
-
-        public SuperFatorialController(ILogger<SuperFatorialController> logger)
-        {
-            _logger = logger;
-        }
+        public SuperFatorialController(){}
 
         [HttpGet("SuperFatorial/{numero}")]
         public SuperFatorialModel CalcularSuperFatorial(int numero)
