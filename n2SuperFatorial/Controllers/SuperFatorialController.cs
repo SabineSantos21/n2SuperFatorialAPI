@@ -18,7 +18,7 @@ namespace n2SuperFatorial.Controllers
         }
 
         [HttpGet("SuperFatorial/{numero}")]
-        public SuperFatorialModel CalcularSuperFatorial([FromQuery] int numero)
+        public SuperFatorialModel CalcularSuperFatorial(int numero)
         {
             FatorialService fatorialService = new FatorialService();
 
