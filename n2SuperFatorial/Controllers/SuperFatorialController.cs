@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using Swashbuckle.AspNetCore.Annotations;
 
 namespace n2SuperFatorial.Controllers
 {
