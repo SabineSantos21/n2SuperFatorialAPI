@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace n2SuperFatorial.Controllers
 {
@@ -17,8 +18,8 @@ namespace n2SuperFatorial.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "SuperFatorial/{numero}")]
-        public SuperFatorialModel Get([FromQuery] int numero)
+        [HttpGet("SuperFatorial/{numero}")]
+        public SuperFatorialModel CalcularSuperFatorial([FromQuery] int numero)
         {
             FatorialService fatorialService = new FatorialService();
 
